@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDChapter" representedClassName="CDChapter" syncable="YES">
+        <attribute name="chapterIndex" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="chapterTamil" attributeType="String" defaultValueString=""/>
+        <attribute name="parentSubSection" attributeType="String" defaultValueString=""/>
+        <attribute name="recordName" attributeType="String" defaultValueString=""/>
+    </entity>
+    <entity name="CDCouplet" representedClassName="CDCouplet" syncable="YES">
+        <attribute name="coupletIndex" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="coupletTamil" attributeType="String" defaultValueString=""/>
+        <attribute name="parimelazhagarExplanation" attributeType="String" defaultValueString=""/>
+        <attribute name="recordName" attributeType="String" defaultValueString=""/>
+    </entity>
+    <entity name="CDMarkdownCache" representedClassName="CDMarkdownCache" syncable="YES">
+        <attribute name="eTag" optional="YES" attributeType="String"/>
+        <attribute name="lastChecked" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastModified" optional="YES" attributeType="String"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="resourceURL" attributeType="String" defaultValueString=""/>
+    </entity>
+    <entity name="CDSection" representedClassName="CDSection" syncable="YES">
+        <attribute name="recordName" attributeType="String" defaultValueString=""/>
+        <attribute name="sectionIndex" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sectionTamil" attributeType="String" defaultValueString=""/>
+    </entity>
+    <entity name="CDSubSection" representedClassName="CDSubSection" syncable="YES">
+        <attribute name="parentSection" attributeType="String" defaultValueString=""/>
+        <attribute name="recordName" attributeType="String" defaultValueString=""/>
+        <attribute name="subSectionIndex" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="subSectionTamil" attributeType="String" defaultValueString=""/>
+    </entity>
+    <elements>
+        <element name="CDSection" positionX="-325.67578125" positionY="11.4375" width="128" height="88"/>
+        <element name="CDSubSection" positionX="-159.94140625" positionY="12.796875" width="128" height="103"/>
+        <element name="CDChapter" positionX="4.74609375" positionY="10.9453125" width="128" height="103"/>
+        <element name="CDCouplet" positionX="171.2265625" positionY="8.2734375" width="128" height="103"/>
+        <element name="CDMarkdownCache" positionX="337" positionY="8" width="128" height="118"/>
+    </elements>
+</model>
